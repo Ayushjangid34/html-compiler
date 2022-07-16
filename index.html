@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>HTML interpreter</title>
+		<link rel="stylesheet" href="html_live_compiler.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		
+	</head>	
+<body style="background-color: rgb(232, 232, 240) ;">
+	<img style="display: block;
+	margin-left: auto;
+	margin-right: auto; width: 120px;" src="img.png" alt="error:(">
+<div id="container">
+	<div id="header">
+			 <button id="html" onclick="codevisibility(this)" class="selector">index.html</button>
+			 <button id="css" onclick="codevisibility(this)" class="selector">style.css</button>
+			 <button id="js" onclick="codevisibility(this)" class="selector">script.js</button>
+			
+			 <button style="margin-right: 30% ;" id="reset" onclick="reset()">RESET</button>			
+	</div>
+	<div style="width:35%; height:90%; margin:none; float: left; display: block;" id="htmlcode">
+	<textarea spellcheck="false" id="htmltext" class="textarea" ><!-- Enter HTML code here -->
+</textarea>
+	</div>
+	<div style="width:35%; height:90%; margin:none; float: left; display: none;" id="csscode">
+		<textarea spellcheck="false" id="csstext" class="textarea" >/* Cascading Style Sheet code */
+</textarea>
+	</div>
+	<div style="width:35%; height:90%; margin:none; float: left; display: none;" id="jscode">
+		<textarea spellcheck="false" id="jstext" class="textarea" >/* JavaScript code */
+</textarea>
+	</div>
+
+	<iframe id="output" ></iframe>
+</div>
+<script src="html_live_compiler.js"></script>
+</body>
+</html>
